@@ -1,0 +1,27 @@
+[font=Verdana][size=4][b]Description[/b][/size][/font]
+[url=https://github.com/UE4SS-RE/RE-UE4SS]UE4SS[/url] (Unreal Engine 4/5 Scripting System) bundle with the necessary configurations to make it work with the latest Abiotic Factor version.
+I give each bundle a separate version from the current UE4SS version to better track changes and signal updates.
+
+[font=Verdana][size=4][b]Manual Installation[/b][/size][/font]
+[size=1]As for now Vortex doesn't support the game, so you have to install everything manually.[/size]
+1. Download the latest bundle from [b]Files[/b] page
+2. Extract/unzip the zip file
+3. Move the [b]dwmapi.dll[/b] and the whole [b]ue4ss[/b] folder to the directory: [i](game root directory)\AbioticFactor\Binaries\Win64\[/i].
+[size=2]For Steam users it's usually: [b]C:\Program Files (x86)\Steam\steamapps\common\AbioticFactor\Binaries\Win64\[/b][/size]
+4. Verify that the [b]dwmapi.dll[/b] and [b]ue4ss[/b] folder are in the same directory as the [b]AbioticFactor-Win64-Shipping.exe[/b]
+5. Done, you can download and install mods now
+
+[font=Verdana][size=4][b]Directories[/b][/size][/font]
+[size=3]All UE4SS relevant files are now in the [b]ue4ss[/b] directory![/size]
+[b]Mods:[/b] [i](game root directory)\AbioticFactor\Binaries\Win64\ue4ss\Mods\[/i]
+[b]mods.txt:[/b] [i](game root directory)\AbioticFactor\Binaries\Win64\ue4ss\Mods\mods.txt[/i]
+[b]Settings:[/b] [i](game root directory)\AbioticFactor\Binaries\Win64\ue4ss\UE4SS-settings.ini[/i]
+[b]Log file:[/b] [i](game root directory)\AbioticFactor\Binaries\Win64\ue4ss\UE4SS.log[/i]
+
+Not all mod descriptions might be up to date! You have to put all UE4SS mods into the [b]\Win64\ue4ss\Mods\[/b] directory, even if the mod says [i]\Win64\Mods\[/i].
+
+[size=2][font=Verdana][b]Credits[/b][/font]
+[list]
+[*][url=https://github.com/UE4SS-RE/RE-UE4SS/graphs/contributors]RE-UE4SS Contributors[/url] for making it possible
+[*][url=https://next.nexusmods.com/profile/igromanru/about]igromanru[/url]﻿ (myself) signatures and configurations for best possible UE4SS performance
+[/list][/size]
