@@ -9,7 +9,9 @@ I give each bundle a separate version from the current UE4SS version to better t
 3. Move and overwrite the [b]dwmapi.dll[/b] and the whole [b]ue4ss[/b] folder to the directory: [i](game root directory)\AbioticFactor\Binaries\Win64\[/i].
 [size=2]For Steam users it's usually: [b]C:\Program Files (x86)\Steam\steamapps\common\AbioticFactor\Binaries\Win64\[/b][/size]
 4. Verify that the [b]dwmapi.dll[/b] and [b]ue4ss[/b] folder are in the same directory as the [b]AbioticFactor-Win64-Shipping.exe[/b]
-5. Done, you can download and install mods now
+See [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1726785869-193872018.png]Screenshot[/url].
+5. Done, you can download and install mods now.
+This is how ue4ss directory should look like: [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1726786031-1393126728.png]Screenshot[/url]
 
 [font=Verdana][size=4][b]Directories[/b][/size][/font]
 [size=3]All UE4SS relevant files are now in the [b]ue4ss[/b] directory![/size]
@@ -28,9 +30,17 @@ Make sure that following mods are disabled in the [b]mods.txt[/b], otherwise the
 [code]BPML_GenericFunctions : 0
 BPModLoaderMod : 0[/code]
 
+[font=Verdana][size=4][b]Information for Mod Developers[/b][/size][/font]
+Currently the BPModLoader and the BeginPlay hook cause crashes, therefore you can't make UE4SS BP mods.
+Avoid using [url=https://docs.ue4ss.com/lua-api/global-functions/registerbeginplayprehook.html]RegisterBeginPlayPreHook[/url] and [url=https://docs.ue4ss.com/lua-api/global-functions/registerbeginplayposthook.html]RegisterBeginPlayPostHook[/url], since they depend on the BeginPlay hook, which is currently disabled to prevent random crashes.
+
+[font=Verdana][size=4][b]Known Issues[/b][/size][/font]
+Random game crashes when loading into game, leaving to main menu or closing the game. (It's annoying but shouldn't impact the game play)
 
 [size=2][font=Verdana][b]Credits[/b][/font]
 [list]
 [*][url=https://github.com/UE4SS-RE/RE-UE4SS/graphs/contributors]RE-UE4SS Contributors[/url] for making it possible
 [*][url=https://next.nexusmods.com/profile/igromanru/about]igromanru[/url]﻿ (myself) signatures and configurations for best possible UE4SS performance
 [/list][/size]
+
+[url=https://github.com/igromanru/AF-UE4SS]GitHub Page[/url]
