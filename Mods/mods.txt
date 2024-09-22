@@ -1,14 +1,10 @@
 ﻿KismetDebuggerMod : 0
-CheatManagerEnablerMod : 1
 ActorDumperMod : 0
-ConsoleCommandsMod : 0
+CheatManagerEnablerMod : 1
 ConsoleEnablerMod : 1
 SplitScreenMod : 0
 LineTraceMod : 0
-BPML_GenericFunctions : 0
-BPModLoaderMod : 0
 jsbLuaProfilerMod : 0
-
 
 
 
