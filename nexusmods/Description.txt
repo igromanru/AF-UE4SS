@@ -25,18 +25,12 @@ Not all mod descriptions might be up to date! You have to put all UE4SS mods int
 [font=Verdana][size=4][b]Migration from older UE4SS[/b][/size][/font]
 To migrate from the release version of UE4SS you just have to move all installed mods from [i]\Win64\Mods\[/i] to [i]\Win64\ue4ss\Mods\[/i] directory (see Directories section above).
 Don't forget to migrate the [b]mods.txt[/b] changes as well.
-[color=#e69138][b]Very important![/b][/color]
-Make sure that following mods are disabled in the [b]mods.txt[/b], otherwise the game will crash a lot:  
-[code]BPML_GenericFunctions : 0
-BPModLoaderMod : 0[/code]
-
-[font=Verdana][size=4][b]Information for Mod Developers[/b][/size][/font]
-Currently the BPModLoader and the BeginPlay hook cause crashes, therefore you can't make UE4SS BP mods.
-Avoid using [url=https://docs.ue4ss.com/lua-api/global-functions/registerbeginplayprehook.html]RegisterBeginPlayPreHook[/url] and [url=https://docs.ue4ss.com/lua-api/global-functions/registerbeginplayposthook.html]RegisterBeginPlayPostHook[/url], since they depend on the BeginPlay hook, which is currently disabled to prevent random crashes.
 
 [font=Verdana][size=4][b]Known Issues[/b][/size][/font]
-Random game crashes when loading into game, leaving to main menu or closing the game. (It's annoying but shouldn't impact the game play)
-
+[list]
+[*]Random game crashes when loading into game, leaving to main menu or closing the game. (It's annoying but shouldn't impact the game play)
+[*]Sometimes a registered hotkey from any mod can cause a crash. Usually if you press the hotkey without issues it stays this way until the next game start.
+[/list]
 [size=2][font=Verdana][b]Credits[/b][/font]
 [list]
 [*][url=https://github.com/UE4SS-RE/RE-UE4SS/graphs/contributors]RE-UE4SS Contributors[/url] for making it possible
