@@ -6,12 +6,12 @@ I give each bundle a separate version from the current UE4SS version to better t
 [size=1]As for now Vortex doesn't support the game, so you have to install everything manually.[/size]
 1. Download the latest bundle from [b]Files[/b] page
 2. Extract/unzip the zip file
-3. Move and overwrite the [b]dwmapi.dll[/b] and the whole [b]ue4ss[/b] folder to the directory: [i](game root directory)\AbioticFactor\Binaries\Win64\[/i].
+3. Move and overwrite the [b]version.dll[/b] and the whole [b]ue4ss[/b] folder to the directory: [i](game root directory)\AbioticFactor\Binaries\Win64\[/i].
 [size=2]For Steam users it's usually: [b]C:\Program Files (x86)\Steam\steamapps\common\AbioticFactor\Binaries\Win64\[/b][/size]
-4. Verify that the [b]dwmapi.dll[/b] and [b]ue4ss[/b] folder are in the same directory as the [b]AbioticFactor-Win64-Shipping.exe[/b]
-See [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1726785869-193872018.png]Screenshot[/url].
+4. Verify that the [b]version.dll[/b] and [b]ue4ss[/b] folder are in the same directory as the [b]AbioticFactor-Win64-Shipping.exe[/b]
+See [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1731950649-2140736488.png]Screenshot[/url].
 5. Done, you can download and install mods now.
-This is how ue4ss directory should look like: [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1726786031-1393126728.png]Screenshot[/url]
+This is how ue4ss directory should look like: [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1729694482-1398976251.png]Screenshot[/url]
 
 [font=Verdana][size=4][b]Directories[/b][/size][/font]
 [size=3]All UE4SS relevant files are now in the [b]ue4ss[/b] directory![/size]
@@ -26,6 +26,13 @@ Not all mod descriptions might be up to date! You have to put all UE4SS mods int
 To migrate from the release version of UE4SS you just have to move all installed mods from [i]\Win64\Mods\[/i] to [i]\Win64\ue4ss\Mods\[/i] directory (see Directories section above).
 Don't forget to migrate the [b]mods.txt[/b] changes as well.
 
+[font=Verdana][size=4][b]Delete crash dumps sometimes[/b][/size][/font]
+[size=2]Sadly the know crashes (see Known Issues below) probably won't be fixed anytime soon. Therefore I recommend to delete game's crash dumps once in a while to free space.[/size]
+1. Navigate into [i]C:\Users\(your windows username here)\AppData\Local\AbioticFactor\Saved\[/i]
+[size=2]Copy paste into explorer: [b]%userprofile%\AppData\Local\AbioticFactor\Saved\[/b][/size]
+2. Delete the whole [b]Crashes[/b] folder.
+3. Done. [size=2]You can do it like once a month, they don't take much space.[/size]
+
 [font=Verdana][size=4][b]Known Issues[/b][/size][/font]
 [list]
 [*]Random game crashes when loading into game, leaving to main menu or closing the game. (It's annoying but shouldn't impact the game play)
@@ -36,5 +43,11 @@ Don't forget to migrate the [b]mods.txt[/b] changes as well.
 [*][url=https://github.com/UE4SS-RE/RE-UE4SS/graphs/contributors]RE-UE4SS Contributors[/url] for making it possible
 [*][url=https://next.nexusmods.com/profile/igromanru/about]igromanru[/url]﻿ (myself) signatures and configurations for best possible UE4SS performance
 [/list][/size]
-
 [url=https://github.com/igromanru/AF-UE4SS]GitHub Page[/url]
+
+[font=Arial][size=4]Highest form of appreciation[/size][/font]
+[size=2]If you like my work and feel generous, you can support me.[/size]
+[b]BTC:[/b] bc1q3frvfljn7ut09ggep2gxugv4ypqvyexz3ya7ja
+[b]ETH:[/b] 0xEedBbF6eFa84198cc94fE4Bf6FBB5dfa674AF86b
+[b]ADA:[/b] addr1qyx2sd2rgwdzvjhwnc35udx4k6w9lg524pwrf0llr7d2shzrewyq3nqyxfceuhgh5n5ucx3n8ws0n48krrlpw4khtedq4hzv93
+[url=https://ko-fi.com/igromanru][img]https://i.imgur.com/rGcPxK8.png[/img][/url]
