@@ -11,7 +11,7 @@ I give each bundle a separate version from the current UE4SS version to better t
 4. Verify that the [b]version.dll[/b] and [b]ue4ss[/b] folder are in the same directory as the [b]AbioticFactor-Win64-Shipping.exe[/b]
 See [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1731950649-2140736488.png]Screenshot[/url].
 5. Done, you can download and install mods now.
-This is how ue4ss directory should look like: [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1729694482-1398976251.png]Screenshot[/url]
+This is how ue4ss directory should look like: [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1733502639-596225892.png]Screenshot[/url]
 
 [font=Verdana][size=4][b]Directories[/b][/size][/font]
 [size=3]All UE4SS relevant files are now in the [b]ue4ss[/b] directory![/size]
