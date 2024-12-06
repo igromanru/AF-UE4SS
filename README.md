@@ -2,7 +2,7 @@
 [Official NexusMods page](https://www.nexusmods.com/abioticfactor/mods/35)
 
 ## Current UE4SS version
-UE4SS_v3.0.1-186-g8d38572  
+UE4SS_v3.0.1-204-gb47690f  
 https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental  
-https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-186-g8d38572.zip    
-https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/zDEV-UE4SS_v3.0.1-186-g8d38572.zip
+https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-204-gb47690f.zip    
+https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/zDEV-UE4SS_v3.0.1-204-gb47690f.zip
