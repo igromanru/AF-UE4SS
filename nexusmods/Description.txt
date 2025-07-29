@@ -6,9 +6,10 @@ I give each bundle a separate version from the current UE4SS version to better t
 [size=1]As for now Vortex doesn't support the game, so you have to install everything manually.[/size]
 1. Download the latest bundle from [b]Files[/b] page
 2. Extract/unzip the zip file
-3. Move and overwrite the [b]version.dll[/b] and the whole [b]ue4ss[/b] folder to the directory: [i](game root directory)\AbioticFactor\Binaries\Win64\[/i].
-[size=2]For Steam users it's usually: [b]C:\Program Files (x86)\Steam\steamapps\common\AbioticFactor\Binaries\Win64\[/b][/size]
-4. Verify that the [b]version.dll[/b] and [b]ue4ss[/b] folder are in the same directory as the [b]AbioticFactor-Win64-Shipping.exe[/b]
+3. Move and overwrite the [b]dwmapi.dll[/b] and the whole [b]ue4ss[/b] folder to the directory: [i](game root directory)\AbioticFactor\Binaries\Win64\[/i].
+[size=2]For Steam users it's usually: [b]C:\Program Files (x86)\Steam\steamapps\common\AbioticFactor\Binaries\Win64\[/b]
+For MS Store, something like: [b]C:\Program Files\WindowsApps\PlayStack.AbioticFactor_1.0.20061.0_x64__3wcqaesafpzfy\AbioticFactor\Binaries\WinGDK[/b][/size]
+4. Verify that the [b]dwmapi.dll[/b] and [b]ue4ss[/b] folder are in the same directory as the [b]AbioticFactor-Win64-Shipping.exe[/b]
 See [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1731950649-2140736488.png]Screenshot[/url].
 5. Done, you can download and install mods now.
 This is how ue4ss directory should look like: [url=https://staticdelivery.nexusmods.com/mods/6412/images/35/35-1733502639-596225892.png]Screenshot[/url]
@@ -20,16 +21,18 @@ This is how ue4ss directory should look like: [url=https://staticdelivery.nexusm
 [b]Settings:[/b] [i](game root directory)\AbioticFactor\Binaries\Win64\ue4ss\UE4SS-settings.ini[/i]
 [b]Log file:[/b] [i](game root directory)\AbioticFactor\Binaries\Win64\ue4ss\UE4SS.log[/i]
 
-Not all mod descriptions might be up to date! You have to put all UE4SS mods into the [b]\Win64\ue4ss\Mods\[/b] directory, even if the mod says [i]\Win64\Mods\[/i].
+Not all mod descriptions might be up-to-date! You have to put all UE4SS mods into the [b]\Win64\ue4ss\Mods\[/b] directory, even if the mod says [i]\Win64\Mods\[/i].
 
-[font=Verdana][size=4][b]Migration from older UE4SS[/b][/size][/font]
-To migrate from the release version of UE4SS you just have to move all installed mods from [i]\Win64\Mods\[/i] to [i]\Win64\ue4ss\Mods\[/i] directory (see Directories section above).
-Don't forget to migrate the [b]mods.txt[/b] changes as well.
-
+[font=Verdana][size=4][b]Dedicated Server Support[/b][/size][/font]
+For UE4SS to work in a Dedicated Server, you have to replace the loader, [i]dwmapi.dll[/i] with [b]version.dll[/b] from [i]Optional Files[/i] in Files tab.
+On Linux UE4SS needs Windows environment to run. On a Linux system you need either Proton or at least Wine.
+And to add the following command as launch option:
+[code]WINEDLLOVERRIDES="version.dll=n,b" %command%
+[/code]
 [font=Verdana][size=4][b]Delete crash dumps sometimes[/b][/size][/font]
-[size=2]Sadly the know crashes (see Known Issues below) probably won't be fixed anytime soon. Therefore I recommend to delete game's crash dumps once in a while to free space.[/size]
+[size=2]Sadly, the know crashes (see Known Issues below) probably won't be fixed anytime soon. Therefore, I recommend deleting game's crash dumps once in a while to free space.[/size]
 1. Navigate into [i]C:\Users\(your windows username here)\AppData\Local\AbioticFactor\Saved\[/i]
-[size=2]Copy paste into explorer: [b]%userprofile%\AppData\Local\AbioticFactor\Saved\[/b][/size]
+[size=2]Copy and paste into explorer: [b]%userprofile%\AppData\Local\AbioticFactor\Saved\[/b][/size]
 2. Delete the whole [b]Crashes[/b] folder.
 3. Done. [size=2]You can do it like once a month, they don't take much space.[/size]
 
@@ -38,6 +41,12 @@ Don't forget to migrate the [b]mods.txt[/b] changes as well.
 [*]Random game crashes when loading into game, leaving to main menu or closing the game. (It's annoying but shouldn't impact the game play)
 [*]Sometimes a registered hotkey from any mod can cause a crash. Usually if you press the hotkey without issues it stays this way until the next game start.
 [/list]
+[font=Verdana][size=4][b]Bug Report[/b][/size][/font]
+If you experience crashes or other UE4SS related issues, please provide a brief description and the content of the [b]UE4SS.log[/b].
+The log file is located in the [b]ue4ss[/b] directory.
+Path: [i](game root directory)\AbioticFactor\Binaries\Win64\ue4ss[/i]
+The easiest way to share the content of the log file is to upload it to a site like: [url=https://pastebin.com/]pastebin.com[/url]
+
 [size=2][font=Verdana][b]Credits[/b][/font]
 [list]
 [*][url=https://github.com/UE4SS-RE/RE-UE4SS/graphs/contributors]RE-UE4SS Contributors[/url] for making it possible
@@ -47,7 +56,5 @@ Don't forget to migrate the [b]mods.txt[/b] changes as well.
 
 [font=Arial][size=4]Highest form of appreciation[/size][/font]
 [size=2]If you like my work and feel generous, you can support me.[/size]
-[b]BTC:[/b] bc1q3frvfljn7ut09ggep2gxugv4ypqvyexz3ya7ja
-[b]ETH:[/b] 0xEedBbF6eFa84198cc94fE4Bf6FBB5dfa674AF86b
-[b]ADA:[/b] addr1qyx2sd2rgwdzvjhwnc35udx4k6w9lg524pwrf0llr7d2shzrewyq3nqyxfceuhgh5n5ucx3n8ws0n48krrlpw4khtedq4hzv93
 [url=https://ko-fi.com/igromanru][img]https://i.imgur.com/rGcPxK8.png[/img][/url]
+[url=https://buymeacoffee.com/igromanru][img]https://i.imgur.com/JG0mNZg.png[/img][/url]
