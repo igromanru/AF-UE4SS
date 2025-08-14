@@ -1,10 +1,10 @@
-﻿SplitScreenMod : 0
-LineTraceMod : 0
-BPML_GenericFunctions : 0
-BPModLoaderMod : 0
+﻿LineTraceMod : 0
 CheatManagerEnablerMod : 1
 ConsoleCommandsMod : 1
 ConsoleEnablerMod : 1
+BPML_GenericFunctions : 1
+BPModLoaderMod : 1
+
 
 
 
