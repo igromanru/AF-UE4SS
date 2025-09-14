@@ -1,4 +1,4 @@
-﻿LineTraceMod : 0
+LineTraceMod : 0
 CheatManagerEnablerMod : 1
 ConsoleCommandsMod : 1
 ConsoleEnablerMod : 1
